@@ -24,6 +24,7 @@
   + 修改操作，确保MODELS =后包含huge，修改后如下：
 
     ```
+    
       MODELS = small medium large huge
     ```
    2.修改 Makefile.in
@@ -31,9 +32,10 @@
    + 修改操作，修改MCS51编译的TARGETS，修改后如下：
 
     ```
-ifeq ($(OPT_DISABLE_MCS51), 0)
+
+    ifeq ($(OPT_DISABLE_MCS51), 0)
 		    TARGETS        += models   model-mcs51-stack-auto
-endif
+    endif
     ```
 
 ## 其他编译中需要使用到的工具
