@@ -24,7 +24,7 @@
   + 修改操作，确保MODELS =后包含huge，修改后如下：
 
     ```
-    
+
       MODELS = small medium large huge
     ```
    2.修改 Makefile.in
