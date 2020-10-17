@@ -10,6 +10,23 @@
 
 -  [contiki](!https://github.com/contiki-os/contiki.git)
 
+###  操作系统占用的硬件资源
+
+*注意：列举的资源可能不全。使用以下资源时需要考虑操作系统的影响*
+
+ *  P1_0 (LED Green)
+ *  P1_1 (LED Red)
+ *  P1_4 (LED Yellow)
+ *  P0_1 (LED4 shares port/pin with B1 and is currently unused,BUTTON 1)
+ *  UART0 (调试输出)
+ *  T1(rtimer)
+ *  Sleep Timer（clock）
+ *  ADC(ADC sensor,检测温度和电源电压)
+ *  DMA
+ *  中断（P0中断，T1中断，Sleep Timer中断,DMA中断）
+
+ 
+
 ## 网络协议栈
 
 - RIME
