@@ -72,6 +72,11 @@
 		<Unit filename="../../eeprom.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../../haldma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../haldma.h" />
+		<Unit filename="../../halflash.h" />
 		<Unit filename="../../includes.h" />
 		<Unit filename="../../node_main.c">
 			<Option compilerVar="CC" />
