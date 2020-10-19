@@ -40,10 +40,19 @@
 
 #ifndef PROJECT_CONF_H_
 #define PROJECT_CONF_H_
-//启用DMA
-#define DMA_CONF_ON 1
+//不启用DMA
+#define DMA_CONF_ON 0
 //修改PANID
 #define IEEE802154_CONF_PANID 0x5FF5U
+
+#if DMA_CONF_ON
+
 //USB DMA No trigger
-#define DMA_USB_CHANNEL  0  
+#define DMA_USB_CHANNEL  0
+
+#endif // DMA_CONF_ON
+
+//包含EEPROM.c
+#define INCLUDE_EEPROM_C
+
 #endif /* PROJECT_CONF_H_ */

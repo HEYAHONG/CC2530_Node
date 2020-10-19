@@ -69,6 +69,10 @@
 		</Linker>
 		<Unit filename="../../Makefile" />
 		<Unit filename="../../Makefile.target" />
+		<Unit filename="../../eeprom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../includes.h" />
 		<Unit filename="../../node_main.c">
 			<Option compilerVar="CC" />
 		</Unit>
