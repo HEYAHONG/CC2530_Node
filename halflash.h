@@ -22,6 +22,18 @@
 #define HAL_NV_PAGE_CNT            6
 #endif
 
+#define HAL_NV_PAGE_BEG           (HAL_NV_PAGE_END-HAL_NV_PAGE_CNT+1)
+
+// Used by DMA macros to shift 1 to create a mask for DMA registers.
+#define HAL_NV_DMA_CH              0
+#define HAL_DMA_CH_RX              3
+#define HAL_DMA_CH_TX              4
+
+#define HAL_NV_DMA_GET_DESC()      HAL_DMA_GET_DESC0()
+#define HAL_NV_DMA_SET_ADDR(a)     HAL_DMA_SET_ADDR_DESC0((a))
+
+
+
 /**************************************************************************************************
  * @fn          HalFlashRead
  *

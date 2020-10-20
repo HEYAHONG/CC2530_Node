@@ -1,6 +1,6 @@
 #ifndef HALDMA_H_INCLUDED
 #define HALDMA_H_INCLUDED
-#include "stdint.h"
+#include "hal_defs.h"
 /*********************************************************************
  * MACROS
  */
