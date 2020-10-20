@@ -55,6 +55,25 @@
  */
 void HalFlashRead(uint8_t pg, uint16_t offset, uint8_t *buf, uint16_t cnt);
 
+/**************************************************************************************************
+ * @fn          HalFlashWrite
+ *
+ * @brief       This function writes 'cnt' bytes to the internal flash.
+ *
+ * input parameters
+ *
+ * @param       addr - Valid HAL flash write address: actual addr / 4 and quad-aligned.
+ * @param       buf - Valid buffer space at least as big as 'cnt' X 4.
+ * @param       cnt - Number of 4-byte blocks to write.
+ *
+ * output parameters
+ *
+ * None.
+ *
+ * @return      None.
+ **************************************************************************************************
+ */
+void HalFlashWrite(uint16_t addr, uint8_t *buf, uint16_t cnt);
 
 /**************************************************************************************************
  * @fn          HalFlashErase
