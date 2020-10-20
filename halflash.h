@@ -18,8 +18,8 @@
 #define HAL_NV_PAGE_CNT            2
 #else
 #define HAL_FLASH_LOCK_BITS        16
-#define HAL_NV_PAGE_END            126
-#define HAL_NV_PAGE_CNT            6
+#define HAL_NV_PAGE_END            127
+#define HAL_NV_PAGE_CNT            HAL_FLASH_PAGE_PER_BANK
 #endif
 
 #define HAL_NV_PAGE_BEG           (HAL_NV_PAGE_END-HAL_NV_PAGE_CNT+1)
