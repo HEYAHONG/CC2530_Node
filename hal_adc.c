@@ -70,7 +70,7 @@ uint16 HalAdcRead (uint8 channel, uint8 resolution)
   }
 
   /* Enable channel */
-  //ADCCFG |= adcChannel;
+  APCFG |= adcChannel;
 
   /* Convert resolution to decimation rate */
   switch (resolution)
@@ -97,7 +97,7 @@ uint16 HalAdcRead (uint8 channel, uint8 resolution)
   while (!(ADCCON1 & HAL_ADC_EOC));
 
   /* Disable channel after done conversion */
-  //ADCCFG &= (adcChannel ^ 0xFF);
+  APCFG &= (adcChannel ^ 0xFF);
 
   /* Read the result */
   reading = (int16) (ADCL);
