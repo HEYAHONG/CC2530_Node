@@ -11,7 +11,7 @@
 //包含hal源代码
 #include "haldma.c"
 #include "halflash.c"
-
+#include "hal_adc.c"
 
 #ifdef INCLUDE_EEPROM_C
 #include "eeprom.c"
