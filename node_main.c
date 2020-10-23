@@ -50,6 +50,17 @@ PROCESS_THREAD(node_main_process, ev, data)
 
     PROCESS_BEGIN();
 
+    {//设置地址用于调试
+        static linkaddr_t addr;
+
+        //节点地址为1.0
+        addr.u8[0]=1;
+        addr.u8[1]=0;
+
+        //设置节点地址
+        linkaddr_set_node_addr(&addr);
+    }
+
     //启动广播接收
     broadcast_open(&broadcast,BroadCast_Rime_Channel, &broadcast_call);
 
